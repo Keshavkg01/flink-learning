@@ -1,0 +1,71 @@
+2024-07-12 21:42:09.174 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-07-12 21:42:09.184 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-07-12 21:42:09.436 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-07-12 21:42:10.175 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-07-12 21:42:10.178 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-07-12 21:42:11.785 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-07-12 21:42:11.785 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2024-07-12 21:44:20.432 WARN  org.apache.flink.runtime.taskmanager.Task - Map (4/8)#0 (3e58924ba82a073f14ea9e78d67abf2f_0a448493b4782967b150582570326227_3_0) switched from RUNNING to FAILED with failure cause:
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.alexwang.flink.chapter05.TimerServiceAndKeyedProcessFunction.lambda$main$95f17bfa$1(TimerServiceAndKeyedProcessFunction.java:18)
+	at org.apache.flink.streaming.api.operators.StreamMap.processElement(StreamMap.java:38)
+	at org.apache.flink.streaming.runtime.tasks.OneInputStreamTask$StreamTaskNetworkOutput.emitRecord(OneInputStreamTask.java:237)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.processElement(AbstractStreamTaskNetworkInput.java:146)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.emitNext(AbstractStreamTaskNetworkInput.java:110)
+	at org.apache.flink.streaming.runtime.io.StreamOneInputProcessor.processInput(StreamOneInputProcessor.java:65)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.processInput(StreamTask.java:550)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:231)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:839)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:788)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:952)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:931)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:745)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:562)
+	at java.lang.Thread.run(Thread.java:748)
+2024-07-12 21:44:20.516 WARN  org.apache.flink.runtime.taskmanager.TaskManagerLocation - No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2024-07-12 21:44:41.090 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-07-12 21:44:41.102 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-07-12 21:44:41.353 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-07-12 21:44:42.046 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-07-12 21:44:42.049 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-07-12 21:44:43.622 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-07-12 21:44:43.623 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2024-07-12 21:52:52.362 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-07-12 21:52:52.378 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-07-12 21:52:52.708 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-07-12 21:52:53.421 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-07-12 21:52:53.422 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-07-12 21:52:54.889 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-07-12 21:52:54.890 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2024-07-12 22:00:40.728 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-07-12 22:00:40.742 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-07-12 22:00:41.025 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-07-12 22:00:41.693 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-07-12 22:00:41.695 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-07-12 22:00:43.270 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-07-12 22:00:43.270 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2024-07-12 22:01:04.950 WARN  org.apache.flink.runtime.taskmanager.Task - Map (8/8)#0 (ee59a590966195d0d07ee412e3c765ba_0a448493b4782967b150582570326227_7_0) switched from RUNNING to FAILED with failure cause:
+java.lang.ArrayIndexOutOfBoundsException: 1
+	at com.alexwang.flink.chapter05.TimerServiceAndKeyedProcessFunction.lambda$main$95f17bfa$1(TimerServiceAndKeyedProcessFunction.java:18)
+	at org.apache.flink.streaming.api.operators.StreamMap.processElement(StreamMap.java:38)
+	at org.apache.flink.streaming.runtime.tasks.OneInputStreamTask$StreamTaskNetworkOutput.emitRecord(OneInputStreamTask.java:237)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.processElement(AbstractStreamTaskNetworkInput.java:146)
+	at org.apache.flink.streaming.runtime.io.AbstractStreamTaskNetworkInput.emitNext(AbstractStreamTaskNetworkInput.java:110)
+	at org.apache.flink.streaming.runtime.io.StreamOneInputProcessor.processInput(StreamOneInputProcessor.java:65)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.processInput(StreamTask.java:550)
+	at org.apache.flink.streaming.runtime.tasks.mailbox.MailboxProcessor.runMailboxLoop(MailboxProcessor.java:231)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.runMailboxLoop(StreamTask.java:839)
+	at org.apache.flink.streaming.runtime.tasks.StreamTask.invoke(StreamTask.java:788)
+	at org.apache.flink.runtime.taskmanager.Task.runWithSystemExitMonitoring(Task.java:952)
+	at org.apache.flink.runtime.taskmanager.Task.restoreAndInvoke(Task.java:931)
+	at org.apache.flink.runtime.taskmanager.Task.doRun(Task.java:745)
+	at org.apache.flink.runtime.taskmanager.Task.run(Task.java:562)
+	at java.lang.Thread.run(Thread.java:748)
+2024-07-12 22:01:05.034 WARN  org.apache.flink.runtime.taskmanager.TaskManagerLocation - No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2024-07-12 22:01:20.285 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-07-12 22:01:20.299 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-07-12 22:01:20.557 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-07-12 22:01:21.277 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-07-12 22:01:21.279 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-07-12 22:01:22.747 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-07-12 22:01:22.748 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date

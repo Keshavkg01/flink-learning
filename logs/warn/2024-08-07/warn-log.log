@@ -1,0 +1,79 @@
+2024-08-07 23:01:55.954 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-08-07 23:01:55.961 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-08-07 23:01:56.259 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-08-07 23:01:57.227 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-08-07 23:01:57.229 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-08-07 23:01:58.946 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-08-07 23:01:58.947 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2024-08-07 23:14:38.262 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-08-07 23:14:38.271 WARN  org.apache.flink.runtime.util.HadoopUtils - Could not find Hadoop configuration via any of the supported methods (Flink configuration, environment variables).
+2024-08-07 23:14:38.511 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-08-07 23:14:39.305 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-08-07 23:14:39.309 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-08-07 23:14:40.849 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-08-07 23:14:40.851 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2024-08-07 23:21:08.331 WARN  org.apache.flink.runtime.taskmanager.Task - Source: Socket Stream (1/1)#0 (d6e2dcf4207978d0f083bb3c51b0aa85_bc764cd8ddf7a0cff126f51c16239658_0_0) switched from RUNNING to FAILED with failure cause:
+java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.read1(BufferedReader.java:210)
+	at java.io.BufferedReader.read(BufferedReader.java:286)
+	at java.io.Reader.read(Reader.java:140)
+	at org.apache.flink.streaming.api.functions.source.SocketTextStreamFunction.run(SocketTextStreamFunction.java:110)
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:110)
+	at org.apache.flink.streaming.api.operators.StreamSource.run(StreamSource.java:67)
+	at org.apache.flink.streaming.runtime.tasks.SourceStreamTask$LegacySourceFunctionThread.run(SourceStreamTask.java:333)
+2024-08-07 23:21:08.456 WARN  org.apache.flink.runtime.taskmanager.TaskManagerLocation - No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2024-08-07 23:21:08.732 WARN  org.apache.flink.runtime.minicluster.MiniClusterJobClient - Shutdown of MiniCluster failed.
+java.nio.file.DirectoryNotEmptyException: C:\WorkBench\Work\flink\rocksdb\minicluster_d431468d992b3888ac9c9ba7186f4160\tm_0\tmp\rocksdb-lib-689304bd032a5de21ba69cfb11ad3f90
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:266)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:108)
+	at java.nio.file.Files.deleteIfExists(Files.java:1165)
+	at org.apache.flink.util.FileUtils.deleteDirectoryInternal(FileUtils.java:332)
+	at org.apache.flink.util.FileUtils.deleteFileOrDirectoryInternal(FileUtils.java:308)
+	at org.apache.flink.util.FileUtils.guardIfWindows(FileUtils.java:396)
+	at org.apache.flink.util.FileUtils.guardIfNotThreadSafe(FileUtils.java:375)
+	at org.apache.flink.util.FileUtils.deleteFileOrDirectory(FileUtils.java:247)
+	at org.apache.flink.util.FileUtils.cleanDirectoryInternal(FileUtils.java:361)
+	at org.apache.flink.util.FileUtils.deleteDirectoryInternal(FileUtils.java:322)
+	at org.apache.flink.util.FileUtils.deleteFileOrDirectoryInternal(FileUtils.java:308)
+	at org.apache.flink.util.FileUtils.guardIfWindows(FileUtils.java:396)
+	at org.apache.flink.util.FileUtils.guardIfNotThreadSafe(FileUtils.java:375)
+	at org.apache.flink.util.FileUtils.deleteFileOrDirectory(FileUtils.java:247)
+	at org.apache.flink.util.FileUtils.cleanDirectoryInternal(FileUtils.java:361)
+	at org.apache.flink.util.FileUtils.deleteDirectoryInternal(FileUtils.java:322)
+	at org.apache.flink.util.FileUtils.deleteFileOrDirectoryInternal(FileUtils.java:308)
+	at org.apache.flink.util.FileUtils.guardIfWindows(FileUtils.java:396)
+	at org.apache.flink.util.FileUtils.guardIfNotThreadSafe(FileUtils.java:375)
+	at org.apache.flink.util.FileUtils.deleteFileOrDirectory(FileUtils.java:247)
+	at org.apache.flink.util.FileUtils.cleanDirectoryInternal(FileUtils.java:361)
+	at org.apache.flink.util.FileUtils.deleteDirectoryInternal(FileUtils.java:322)
+	at org.apache.flink.util.FileUtils.guardIfWindows(FileUtils.java:396)
+	at org.apache.flink.util.FileUtils.guardIfNotThreadSafe(FileUtils.java:375)
+	at org.apache.flink.util.FileUtils.deleteDirectory(FileUtils.java:265)
+	at org.apache.flink.runtime.entrypoint.WorkingDirectory.delete(WorkingDirectory.java:63)
+	at org.apache.flink.runtime.minicluster.MiniCluster.deleteDirectories(MiniCluster.java:1327)
+	at org.apache.flink.util.concurrent.FutureUtils.lambda$runAfterwardsAsync$15(FutureUtils.java:595)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:760)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:736)
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442)
+	at org.apache.flink.util.concurrent.DirectExecutorService.execute(DirectExecutorService.java:217)
+	at java.util.concurrent.CompletableFuture$UniCompletion.claim(CompletableFuture.java:529)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:751)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:736)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:1962)
+	at org.apache.flink.util.concurrent.FutureUtils.lambda$null$16(FutureUtils.java:638)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:760)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:736)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:474)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1595)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1582)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)

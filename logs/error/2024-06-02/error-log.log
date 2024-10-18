@@ -1,0 +1,38 @@
+2024-06-02 13:40:44.480 ERROR org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService - Registration at JobManager failed due to an error
+java.util.concurrent.CompletionException: org.apache.flink.runtime.rpc.exceptions.RecipientUnreachableException: Could not send message [LocalRpcInvocation(JobMasterGateway.registerTaskManager(JobID, TaskManagerRegistrationInformation, Time))] from sender [unknown] to recipient [akka://flink/user/rpc/jobmanager_3], because the recipient is unreachable. This can either mean that the recipient has been terminated or that the remote RpcService is currently not reachable.
+	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:292)
+	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:308)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:647)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:632)
+	at java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:672)
+	at java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2006)
+	at org.apache.flink.runtime.registration.RetryingRegistration.register(RetryingRegistration.java:226)
+	at org.apache.flink.runtime.registration.RetryingRegistration.lambda$register$3(RetryingRegistration.java:302)
+	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:760)
+	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:736)
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:442)
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.runWithContextClassLoader(ClassLoadingUtils.java:68)
+	at org.apache.flink.runtime.concurrent.akka.ClassLoadingUtils.lambda$withContextClassLoader$0(ClassLoadingUtils.java:41)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:49)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: org.apache.flink.runtime.rpc.exceptions.RecipientUnreachableException: Could not send message [LocalRpcInvocation(JobMasterGateway.registerTaskManager(JobID, TaskManagerRegistrationInformation, Time))] from sender [unknown] to recipient [akka://flink/user/rpc/jobmanager_3], because the recipient is unreachable. This can either mean that the recipient has been terminated or that the remote RpcService is currently not reachable.
+	at com.sun.proxy.$Proxy14.registerTaskManager(Unknown Source)
+	at org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService$JobManagerRetryingRegistration.invokeRegistration(DefaultJobLeaderService.java:519)
+	at org.apache.flink.runtime.taskexecutor.DefaultJobLeaderService$JobManagerRetryingRegistration.invokeRegistration(DefaultJobLeaderService.java:482)
+	at org.apache.flink.runtime.registration.RetryingRegistration.register(RetryingRegistration.java:222)
+	... 12 common frames omitted
+Caused by: akka.pattern.AskTimeoutException: Recipient [Actor[akka://flink/user/rpc/jobmanager_3#-1446013865]] had already been terminated. Message of type [org.apache.flink.runtime.rpc.messages.LocalFencedMessage].
+2024-06-02 14:04:07.080 ERROR org.apache.flink.runtime.rest.handler.job.JobDetailsHandler - Exception occurred in REST handler: Job e98aa152fbb4dee6f8956bd6d1919a0d not found
+2024-06-02 14:04:07.172 ERROR org.apache.flink.runtime.rest.handler.job.JobExceptionsHandler - Exception occurred in REST handler: Job e98aa152fbb4dee6f8956bd6d1919a0d not found
+2024-06-02 14:04:09.843 ERROR org.apache.flink.runtime.rest.handler.job.JobDetailsHandler - Exception occurred in REST handler: Job e98aa152fbb4dee6f8956bd6d1919a0d not found
+2024-06-02 14:04:09.856 ERROR org.apache.flink.runtime.rest.handler.job.JobExceptionsHandler - Exception occurred in REST handler: Job e98aa152fbb4dee6f8956bd6d1919a0d not found
+2024-06-02 14:07:43.565 ERROR org.apache.flink.runtime.rest.handler.job.JobDetailsHandler - Exception occurred in REST handler: Job 923e683bd9fa66c255f9c7fbfc305af7 not found
+2024-06-02 14:07:43.732 ERROR org.apache.flink.runtime.rest.handler.job.JobExceptionsHandler - Exception occurred in REST handler: Job 923e683bd9fa66c255f9c7fbfc305af7 not found
+2024-06-02 14:07:43.827 ERROR org.apache.flink.runtime.rest.handler.job.JobDetailsHandler - Exception occurred in REST handler: Job 923e683bd9fa66c255f9c7fbfc305af7 not found
+2024-06-02 14:07:43.850 ERROR org.apache.flink.runtime.rest.handler.job.JobExceptionsHandler - Exception occurred in REST handler: Job 923e683bd9fa66c255f9c7fbfc305af7 not found
+2024-06-02 14:07:46.842 ERROR org.apache.flink.runtime.rest.handler.job.JobDetailsHandler - Exception occurred in REST handler: Job 923e683bd9fa66c255f9c7fbfc305af7 not found
+2024-06-02 14:07:46.861 ERROR org.apache.flink.runtime.rest.handler.job.JobExceptionsHandler - Exception occurred in REST handler: Job 923e683bd9fa66c255f9c7fbfc305af7 not found

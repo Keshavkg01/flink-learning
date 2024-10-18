@@ -1,0 +1,35 @@
+2024-05-25 00:27:54.155 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-05-25 00:27:55.549 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-05-25 00:27:55.551 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-05-25 00:27:57.619 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-05-25 00:27:57.619 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2024-05-25 00:27:58.468 WARN  org.apache.flink.metrics.MetricGroup - The operator name DataSource (at main(WordCountBatchProcess.java:20) (org.apache.flink.api.java.io.TextInputFormat)) exceeded the 80 characters length limit and was truncated.
+2024-05-25 00:27:58.468 WARN  org.apache.flink.metrics.MetricGroup - The operator name DataSource (at main(WordCountBatchProcess.java:20) (org.apache.flink.api.java.io.TextInputFormat)) exceeded the 80 characters length limit and was truncated.
+2024-05-25 00:27:58.468 WARN  org.apache.flink.metrics.MetricGroup - The operator name DataSource (at main(WordCountBatchProcess.java:20) (org.apache.flink.api.java.io.TextInputFormat)) exceeded the 80 characters length limit and was truncated.
+2024-05-25 00:27:58.468 WARN  org.apache.flink.metrics.MetricGroup - The operator name DataSource (at main(WordCountBatchProcess.java:20) (org.apache.flink.api.java.io.TextInputFormat)) exceeded the 80 characters length limit and was truncated.
+2024-05-25 00:27:58.468 WARN  org.apache.flink.metrics.MetricGroup - The operator name DataSource (at main(WordCountBatchProcess.java:20) (org.apache.flink.api.java.io.TextInputFormat)) exceeded the 80 characters length limit and was truncated.
+2024-05-25 00:27:58.469 WARN  org.apache.flink.metrics.MetricGroup - The operator name DataSource (at main(WordCountBatchProcess.java:20) (org.apache.flink.api.java.io.TextInputFormat)) exceeded the 80 characters length limit and was truncated.
+2024-05-25 00:27:58.468 WARN  org.apache.flink.metrics.MetricGroup - The operator name DataSource (at main(WordCountBatchProcess.java:20) (org.apache.flink.api.java.io.TextInputFormat)) exceeded the 80 characters length limit and was truncated.
+2024-05-25 00:27:58.469 WARN  org.apache.flink.metrics.MetricGroup - The operator name DataSource (at main(WordCountBatchProcess.java:20) (org.apache.flink.api.java.io.TextInputFormat)) exceeded the 80 characters length limit and was truncated.
+2024-05-25 00:27:58.655 WARN  org.apache.flink.runtime.taskmanager.TaskManagerLocation - No hostname could be resolved for the IP address 127.0.0.1, using IP address as host name. Local input split assignment (such as for HDFS files) may be impacted.
+2024-05-25 19:07:55.055 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-05-25 19:07:55.921 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-05-25 19:07:55.923 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-05-25 19:07:57.936 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-05-25 19:07:57.936 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2024-05-25 19:09:27.775 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-05-25 19:09:28.591 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-05-25 19:09:28.593 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-05-25 19:09:30.422 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-05-25 19:09:30.423 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2024-05-25 19:09:30.856 WARN  org.apache.flink.runtime.jobmaster.JobMaster - Skip setting up checkpointing for a job with dynamic graph.
+2024-05-25 19:35:33.457 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-05-25 19:35:34.396 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-05-25 19:35:34.399 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-05-25 19:35:36.152 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-05-25 19:35:36.152 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date
+2024-05-25 19:58:48.099 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-05-25 19:58:49.005 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - Log file environment variable 'log.file' is not set.
+2024-05-25 19:58:49.010 WARN  org.apache.flink.runtime.webmonitor.WebMonitorUtils - JobManager log files are unavailable in the web dashboard. Log file location not found in environment variable 'log.file' or configuration key 'web.log.path'.
+2024-05-25 19:58:51.242 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - No tokens obtained so skipping notifications
+2024-05-25 19:58:51.242 WARN  org.apache.flink.runtime.security.token.DefaultDelegationTokenManager - Tokens update task not started because either no tokens obtained or none of the tokens specified its renewal date

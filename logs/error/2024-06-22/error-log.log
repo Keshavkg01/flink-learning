@@ -1,0 +1,4 @@
+2024-06-22 20:19:33.029 ERROR org.apache.flink.runtime.rest.handler.job.JobDetailsHandler - Exception occurred in REST handler: Job e9b64692dcf7f126bcf4d81b85660a02 not found
+2024-06-22 20:19:33.100 ERROR org.apache.flink.runtime.rest.handler.job.JobExceptionsHandler - Exception occurred in REST handler: Job e9b64692dcf7f126bcf4d81b85660a02 not found
+2024-06-22 20:19:35.849 ERROR org.apache.flink.runtime.rest.handler.job.JobDetailsHandler - Exception occurred in REST handler: Job e9b64692dcf7f126bcf4d81b85660a02 not found
+2024-06-22 20:19:35.862 ERROR org.apache.flink.runtime.rest.handler.job.JobExceptionsHandler - Exception occurred in REST handler: Job e9b64692dcf7f126bcf4d81b85660a02 not found
